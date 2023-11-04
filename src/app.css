@@ -1,0 +1,178 @@
+:root {
+    font-family: Ubuntu, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #121623;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    --max-content-width: 45rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: radial-gradient(
+            circle farthest-side at var(--x, 50%) var(--y, 100%),
+            rgba(71, 0, 161, 0.5) 0%,
+            rgba(14, 37, 94, 0.5) 15%,
+            transparent 30%
+    );
+    display: flex;
+    justify-content: center;
+}
+
+#app {
+    max-width: var(--max-content-width);
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+a {
+    font-weight: 500;
+    color: #00a3ff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #dd00ff;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2.2em;
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+header {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#logo-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#logo {
+    border: 3px solid white;
+    border-radius: 5px;
+    line-height: 1;
+    font-weight: 700;
+    font-size: 1.5em;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+}
+
+#first-name {
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+#last-name {
+    margin-top: -0.1rem;
+    margin-left: -0.07rem;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.mono-headline {
+    font-family: 'Consolas', 'Lucida Console', 'Courier New', monospace;
+    color: #ffffff;
+    overflow: hidden;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: -0.04rem;
+}
