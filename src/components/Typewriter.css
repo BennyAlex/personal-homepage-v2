@@ -1,37 +1,47 @@
 .typewriter {
     min-width: 400px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-
-.typing-erase {
+.typing, .erasing {
     display: inline-block;
-    width: 0;
     max-width: max-content;
     overflow: hidden;
-    border-right: .05em solid #464545; /* The typwriter cursor */
+    border-right: .05em solid #464545; /* The typewriter cursor */
     white-space: nowrap;
     margin: 0; /* Gives that scrolling effect as the typing happens */
     vertical-align: bottom;
-
-    animation: 3s typing-erase 3s steps(50, end) infinite,
-    blink-caret .5s step-end infinite;
 }
 
-/* The type and erase effect */
-@keyframes typing-erase {
-    0% {
+.typing {
+    width: 0;
+    animation: typing 2.5s steps(50, end) 2s forwards, blink-caret .5s step-end infinite;
+}
+
+.erasing {
+    /* The initial width should be set to the full width after the typing animation */
+    width: 100%;
+    animation: erasing .9s steps(50, end) forwards, blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
         width: 0
     }
-    80% {
+    to {
         width: 100%
     }
-    90%, 100% {
+}
+
+/* The erasing effect */
+@keyframes erasing {
+    to {
         width: 0
     }
 }
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgb(128, 128, 128)
-    }
+    50% { border-color: rgb(128, 128, 128) }
 }

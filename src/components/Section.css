@@ -1,11 +1,11 @@
 .section {
     width: 100%;
-    padding: .5rem 2.5rem;
+    padding: .5rem 4.5rem;
     border-radius: 10px;
 }
 
-.section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
-    margin: 0;
+.section h1, .section h2 {
+    margin: 0 0 1.5rem;
 }
 
 .section-tilt {
@@ -25,4 +25,8 @@
 
 .section-content {
     padding: 0.75rem 0.75rem 1.25rem 2rem;
+}
+
+.section-content button {
+    margin: 0.5rem 0;
 }
