@@ -1,9 +1,9 @@
 :root {
-    font-size: 18px;
+    font-size: 19px;
     --max-content-width: 48rem;
     --current-header-height: 4rem;
-    --site-background: rgb(8, 18, 28);
-    --header-background: rgba(8, 18, 28, 0.825);
+    --header-background: rgba(8, 18, 28, 0.8);
+    --accent-color: rgb(0, 250, 125);
     --x : 50%;
     --y : 50%;
 }
@@ -15,14 +15,12 @@
 body {
     font-family: Ubuntu, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     color: rgba(255, 255, 255, 0.7);
-    background-color: var(--site-background);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
-
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -41,6 +39,11 @@ body {
 
 #app {
     max-width: var(--max-content-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
 }
 
 @font-face {
@@ -83,7 +86,7 @@ a svg {
 }
 
 a:hover, a:hover svg, a:focus svg {
-    color: rgb(0, 250, 125);;
+    color: var(--accent-color);
 }
 
 a:has(svg) {
@@ -109,6 +112,11 @@ h1 {
 #intro-headline, h2 {
     position: relative;
     display: inline;
+    text-shadow:
+            -1px -1px 0 #555,
+            1px -1px 0 #555,
+            -1px  1px 0 #555,
+            1px  1px 0 #555;
 }
 
 #intro-headline:after, h2:after {
@@ -130,7 +138,7 @@ button {
     cursor: pointer;
     padding: 1.33em 2.2em;
     border-radius: 0;
-    color: rgb(0, 250, 125);
+    color: var(--accent-color);
     font-weight: bold;
     font-size: 0.8rem;
     letter-spacing: 2px;
@@ -169,14 +177,6 @@ p {
     margin: 1.5rem 0;
 }
 
-#app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 2rem;
-}
-
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -201,10 +201,10 @@ header {
 header.is-sticky {
     position: fixed;
     box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
     padding: .75rem 1rem;
     background: var(--header-background);
-    animation: slideDown 0.5s ease-out;
+    animation: slideDown 0.4s ease-out;
 }
 
 #header-inner {
@@ -241,14 +241,14 @@ header.is-sticky {
 }
 
 #first-name {
-    font-size: 1.4rem;
+    font-size: 1.32rem;
     line-height: 1;
 }
 
 #last-name {
     margin-top: -0.1rem;
     margin-left: -0.07rem;
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     line-height: 1;
 }
 
@@ -292,8 +292,8 @@ h4 {
 }
 
 footer {
-    font-size: 1.25rem;
-    padding: 2.75rem 1.25rem;
+    font-size: 1.15rem;
+    padding: 3rem 1.25rem;
 }
 
 footer svg {
@@ -303,4 +303,20 @@ footer svg {
 
 .experience {
     margin: 1.5rem 0;
+}
+
+.experience-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience h3, .experience h4 {
+    margin: 0.5rem 0;
+}
+
+.experience p {
+    width: 100%;
+    margin-top: 0.5rem;
 }

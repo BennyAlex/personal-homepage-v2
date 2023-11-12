@@ -37,7 +37,7 @@ function App() {
     const updateHeader = () => {
       const toggleClass = "is-sticky";
       const currentScroll = window.scrollY;
-      if (currentScroll > 170) {
+      if (currentScroll > 146) {
         header.classList.add(toggleClass);
       } else {
         header.classList.remove(toggleClass);
@@ -65,10 +65,10 @@ function App() {
 
           <div id='header-right'>
             <a href='https://www.linkedin.com/in/benjamin-franz/' title='Visit my linkedin profile' target='_blank'>
-              <IconBrandLinkedin size={32}/>
+              <IconBrandLinkedin size={34}/>
             </a>
             <a href='https://www.github.com/BennyAlex/' title='Visit my github profile' target='_blank'>
-              <IconBrandGithub size={32}/>
+              <IconBrandGithub size={34}/>
             </a>
             <a href='mailto:benjamin.alexander.franz@gmail.com' title='Send me an email' target='_blank'>
               <button>Contact me</button>
@@ -94,8 +94,17 @@ function App() {
       <Section tag='experience' title='My Work Experience'>
         <div className='experience'>
           <div className='experience-item'>
-            <h3>Full-Stack Developer @ Eye-Able</h3>
+            <h3>WebInclusion GmbH</h3>
             <h4>09.2022 - Present</h4>
+            <p>
+              As the lead responsible for the dashboard, I developed a comprehensive and interactive
+              single-page-application using React and Material UI, featuring detailed graphs, clear tables, an
+              integrated PDF viewer, and a function to display screenshots with marked bounding boxes. I also programmed
+              a broken-link checker and created a web component to simplify input text into easier language using the
+              OpenAI API, aiding in making content more accessible. Furthermore, I created an automated Lighthouse
+              crawler and a corresponding results page, to give our customers a complete overview of their website’s
+              performance and SEO.
+            </p>
           </div>
           <div className='experience-item'>
             <h3>Eye-Able</h3>
@@ -120,7 +129,7 @@ function App() {
       </Section>
 
       <footer>
-        Coded & Designed with <IconHeart size={21} stroke={2.5}/> by Benjamin Franz
+        Coded & Designed with <IconHeart size={23} stroke={2.5}/> by Benjamin Franz
       </footer>
     </>
   );
