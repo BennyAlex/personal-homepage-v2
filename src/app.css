@@ -4,8 +4,8 @@
     --current-header-height: 4rem;
     --header-background: rgba(8, 18, 28, 0.8);
     --accent-color: rgb(0, 250, 125);
-    --x : 50%;
-    --y : 50%;
+    --x: 50%;
+    --y: 50%;
 }
 
 * {
@@ -112,11 +112,10 @@ h1 {
 #intro-headline, h2 {
     position: relative;
     display: inline;
-    text-shadow:
-            -1px -1px 0 #555,
-            1px -1px 0 #555,
-            -1px  1px 0 #555,
-            1px  1px 0 #555;
+    text-shadow: -1px -1px 0 #555,
+    1px -1px 0 #555,
+    -1px 1px 0 #555,
+    1px 1px 0 #555;
 }
 
 #intro-headline:after, h2:after {
@@ -298,7 +297,7 @@ footer {
 
 footer svg {
     display: inline;
-    margin-bottom: -3px;
+    margin-bottom: -4px;
 }
 
 .experience {
@@ -321,6 +320,18 @@ footer svg {
     margin-top: 0.5rem;
 }
 
+#mobile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.desktop-hidden {
+    display: none;
+}
+
 @media screen and (max-width: 600px) {
     :root {
         font-size: 15px;
@@ -339,11 +350,60 @@ footer svg {
         flex-wrap: wrap;
     }
 
+    #logo-header {
+        gap: 0.5rem;
+    }
+
+    #logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    #name {
+        transform: scale(0.85);
+    }
+
+    button {
+        min-height: 44px;
+        padding: 1.25em 2.13em;
+    }
+
     .mobile-hidden {
         display: none;
     }
 
+    .desktop-hidden {
+        display: block;
+    }
+
     .mono-headline {
         font-size: 1.75rem;
+    }
+
+    #intro-headline {
+        font-size: 2.25rem;
+    }
+
+    footer {
+        padding: 0.57rem 1rem 1.5rem;
+    }
+
+    footer > svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mono-headline {
+        font-size: 1.75rem;
+    }
+
+    .mono-headline:has(.typewriter) {
+        font-size: 1.5rem;
+    }
+
+    #intro-headline {
+        font-size: 2rem;
     }
 }

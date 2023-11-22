@@ -131,7 +131,17 @@ function App() {
       </Section>
 
       <footer>
-        Coded & Designed with <IconHeart size={23} stroke={2.5}/> by Benjamin Franz
+        <div className='desktop-hidden' id='mobile-links'>
+          <a href='https://www.linkedin.com/in/benjamin-franz/' title='Visit my linkedin profile' target='_blank'
+          >
+            <IconBrandLinkedin size={34}/>
+          </a>
+          <a href='https://www.github.com/BennyAlex/' title='Visit my github profile' target='_blank'
+          >
+            <IconBrandGithub size={34}/>
+          </a>
+        </div>
+        Coded & Designed with <IconHeart size={24} stroke={2.5}/> by Benjamin Franz
       </footer>
     </>
   );
