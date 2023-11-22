@@ -30,3 +30,17 @@
 .section-content button {
     margin: 0.5rem 0;
 }
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: .5rem 0;
+    }
+
+    .section-tilt {
+        padding: 0.5rem 1rem;
+    }
+
+    .section-content {
+        padding: 0.5rem 0.5rem 1rem 1.5rem;
+    }
+}

@@ -64,10 +64,12 @@ function App() {
           </Tilt>
 
           <div id='header-right'>
-            <a href='https://www.linkedin.com/in/benjamin-franz/' title='Visit my linkedin profile' target='_blank'>
+            <a href='https://www.linkedin.com/in/benjamin-franz/' title='Visit my linkedin profile' target='_blank'
+               className='mobile-hidden'>
               <IconBrandLinkedin size={34}/>
             </a>
-            <a href='https://www.github.com/BennyAlex/' title='Visit my github profile' target='_blank'>
+            <a href='https://www.github.com/BennyAlex/' title='Visit my github profile' target='_blank'
+               className='mobile-hidden'>
               <IconBrandGithub size={34}/>
             </a>
             <a href='mailto:benjamin.alexander.franz@gmail.com' title='Send me an email' target='_blank'>
@@ -85,7 +87,7 @@ function App() {
         <p>
           I have a passion for building web
           applications. Currently I am working at{" "}
-          <a href="https://www.eye-able.com/">Eye-Able</a> as a
+          <a href="https://www.eye-able.com/">WebInclusion</a> as a
           full-stack engineer.
         </p>
         <button title='Look at my CV / Resume'>CV / Resume</button>

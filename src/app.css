@@ -320,3 +320,30 @@ footer svg {
     width: 100%;
     margin-top: 0.5rem;
 }
+
+@media screen and (max-width: 600px) {
+    :root {
+        font-size: 15px;
+    }
+
+    #app {
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    #header-inner {
+        flex-wrap: wrap;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mono-headline {
+        font-size: 1.75rem;
+    }
+}

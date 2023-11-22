@@ -24,10 +24,10 @@ const Typewriter = ({words, children}) => {
   };
 
   return (
-    <span className='typewriter'>
+    <div className='typewriter'>
       {children}{children ? ' ' : ''}
       <span className={`${isTyping ? 'typing' : 'erasing'}`} onAnimationEnd={handleAnimationEnd}>{words[wordIndex]}</span>
-    </span>
+    </div>
   );
 };
 
