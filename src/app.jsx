@@ -99,24 +99,36 @@ function App() {
             <h3>WebInclusion GmbH</h3>
             <h4>09.2022 - Present</h4>
             <p>
-              As the lead responsible for the dashboard, I developed a comprehensive and interactive
-              single-page-application using React and Material UI, featuring detailed graphs, clear tables, an
-              integrated PDF viewer, and a function to display screenshots with marked bounding boxes. I also programmed
-              a broken-link checker and created a web component to simplify input text into easier language using the
-              OpenAI API, aiding in making content more accessible. Furthermore, I created an automated Lighthouse
-              crawler and a corresponding results page, to give our customers a complete overview of their website’s
-              performance and SEO.
+              As the lead responsible for the <a href="https://dashboard.eye-able.com/demo/" target="_blank">Eye-Able Dashboard</a>, I developed a comprehensive and interactive
+              single-page-application using React and Material UI, featuring detailed graphs and tables, an
+              PDF viewer showing accessibility errors, and a function to display screenshots with marked bounding boxes.
+              I also programmed a broken-link checker and created a <a href="https://dashboard.eye-able.com/demo?goto=/tools/simple-language" target="_blank">web component </a>
+              to simplify input text into easier language using the OpenAI API, aiding in removing barriers in the web. Furthermore, I created an automated Lighthouse
+              crawler and a corresponding results page, to give our customers a complete overview of their website’s performance and SEO.
             </p>
           </div>
           <div className='experience-item'>
-            <h3>Eye-Able</h3>
-            <p>Full-Stack Developer</p>
-            <p>2020 - Present</p>
+            <h3>Self-Employed</h3>
+            <h4>07.2021 - Present</h4>
+            <p>
+              I also work as a freelancer, creating websites for small businesses and private persons. This often includes
+              working with a CMS like Wordpress, but I also create custom websites using php or javascript.
+              Sometimes I try my luck at repairing computers and other electronic devices.
+            </p>
           </div>
           <div className='experience-item'>
-            <h3>Eye-Able</h3>
-            <p>Full-Stack Developer</p>
-            <p>2020 - Present</p>
+            <h3>FAAREN GmbH</h3>
+            <h4>02.2021 - 06.2021</h4>
+            <p>As a software developer, I created the front- and backend for the <a href="https://faaren.com/katalog/" target="_blank">vehicle catalog</a>, using vue.js and Laravel.</p>
+          </div>
+          <div className='experience-item'>
+            <h3>Main-Post GmbH</h3>
+            <h4>09.2015 - 07.2018</h4>
+            <p>
+              I completed a three-year certified, state-recognized apprenticeship as a Computer Science Expert in Software Development. I learnt a lot about
+              software development, creating user interfaces and how computers and the internet work. I worked on a variety of
+              projects using ember.js, vue.js, php, python and MySQL and PostgreSQL databases.
+            </p>
           </div>
         </div>
       </Section>
